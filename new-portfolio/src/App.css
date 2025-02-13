@@ -47,14 +47,41 @@
 
 .navbar {
   background-color: black; /* No quotes around color */
+  background-image: "linear-gradient(to right, #000000, #434343)";
   height: 80px; /* No quotes around numbers */
   display: flex; /* No quotes */
-  justify-content: center; /* No quotes */
+  justify-content: center; /* This ensures the logo and nav-links are spaced apart */
   align-items: center; /* No quotes */
-  font-size: 2.2rem; /* No quotes */
+  font-size: 1.8rem; /* No quotes */
+  font-family: hackerFont;
   position: sticky; /* No quotes */
   top: 0px; /* No quotes */
   z-index: 999; /* No quotes */
-  gap: 60px;
+  gap: 70px;
+  border-radius: 2px;
+}
+
+.logo{
+  left: -200px;
+  height: 60px;
+  width: 350px;
+  margin-right: 0px;
+  margin-left: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: #282c34;
+  border-radius: 10px;
+  position: relative;
+}
+
+.navbartext{
+  color: white;
+  transition: all 0.3s ease; /* Smooth transition for all properties */
+}
+
+.navbartext:hover {
+  transform: scale(1.1); /* Slightly enlarges the button */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Adds a shadow */
 }
 

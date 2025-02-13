@@ -1,11 +1,14 @@
 import './App.css';
-import { Typography } from '@mui/material';
+import logo from './images/logo.png';
+import {Typography } from '@mui/material';
 
 function App() {
   return (
     <div style={{
       backgroundColor:"blue",
+      backgroundImage: "linear-gradient(to right, #1e3c72, #2a5298)",
       height:"100vh",
+      width:"100vw",
       background:"cover",
       boxShadow: '0px 10px 20px rgba(255, 0, 0, 0.25)', // Custom box shadow
       overflow:"auto"
@@ -13,10 +16,11 @@ function App() {
 
 
       <div className='navbar'>
-        <a href='/'> Home </a>
-        <a href='/'> Biography </a>
-        <a href='/'> Projects </a>
-        <a href='/'> Resume/CV </a>
+        <img src={logo} className='logo' alt="Logo" />
+        <a href='/' className='navbartext'> Home </a>
+        <a href='/' className='navbartext'> Experiences </a>
+        <a href='/' className='navbartext'> Projects </a>
+        <a href='pdfs/Anoruo_CV.pdf' className='navbartext' target="_blank" rel="noopener noreferrer"> Resume_CV </a>
 
       </div>
 
