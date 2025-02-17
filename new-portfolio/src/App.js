@@ -21,7 +21,7 @@ function App() {
       <div className='navbar'>
         <img src={logo} className='logo' alt="Logo" />
         <a href='/' className='navbartext'> Home </a>
-        <a href='/' className='navbartext'> Experiences </a>
+        <a href='/experiences' className='navbartext'> Experiences </a>
         <a href='/' className='navbartext'> Projects </a>
         <a href='pdfs/Anoruo_CV.pdf' className='navbartext' target="_blank" rel="noopener noreferrer"> Resume_CV </a>
 
@@ -80,6 +80,7 @@ function App() {
           borderRadius: "10px",
           padding: "2vh",
           boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
+          overflow:"auto"
         }}
         className="frame"
       >
