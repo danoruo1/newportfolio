@@ -69,7 +69,7 @@ function App() {
       <Box
         sx={{
           width: "70vw",
-          height: "60vh",
+          height: "63vh",
           top: "-470px",
           left: "350px",
           position: "relative",
