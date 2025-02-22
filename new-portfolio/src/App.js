@@ -69,7 +69,7 @@ function App() {
       <Box
         sx={{
           width: "70vw",
-          height: "63vh",
+          height: "60vh",
           top: "-470px",
           left: "350px",
           position: "relative",
@@ -86,7 +86,7 @@ function App() {
       >
         <Typography 
           variant="h3" 
-          sx={{ fontSize: "4vh", fontWeight: "bold", marginBottom: "2vh", fontFamily: "hackerFont" }}
+          sx={{ fontSize: "4vh", fontWeight: "bold", marginBottom: "2vh", fontFamily: "hackerFont", top:"10px"}}
         >
           About Me
         </Typography>
