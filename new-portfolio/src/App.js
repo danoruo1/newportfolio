@@ -48,7 +48,7 @@ function App() {
             alignItems:"center",
             justifyItems:"center",
             backgroundColor:"transparent",
-            borderRadius:"10px"
+            borderRadius:"6px"
         }}>
             <Typography sx={{color:"white", 
         fontFamily:"hackerFont",fontWeight:"bold"
