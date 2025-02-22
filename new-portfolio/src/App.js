@@ -144,21 +144,21 @@ function App() {
         <Box sx={{
           background:"transparent",
         }}>
-            <img src='./github.svg' alt="" height={20} width={20}style={{top:"150px",position:"sticky"}}></img>
+            <img src='./github.svg' alt="" height={20} width={20}style={{top:"150px",position:"sticky",opacity:"0"}}></img>
             <a className='navbarText' href='https://github.com/danoruo1' style={{fontFamily:"hackerFont", color:"white"}}> Github </a>
         </Box>
 
         <Box sx={{
           background:"transparent",
         }}>
-            <img src='./linkedin.webp' alt="" height={20} width={20}style={{top:"150px",position:"sticky"}}></img>
+            <img src='./linkedin.webp' alt="" height={20} width={20}style={{top:"150px",position:"sticky",opacity:"0"}}></img>
             <a className='navbarText' href='https://www.linkedin.com/in/daniel-anoruo-b05097268' style={{fontFamily:"hackerFont", color:"white"}}> Linkedin </a>
         </Box>
 
         <Box sx={{
           background:"transparent",
         }}>
-            <img src='./email.jpg' alt="" height={20} width={20}style={{top:"0px",position:"sticky"}}></img>
+            <img src='./email.jpg' alt="" height={20} width={20}style={{top:"0px",position:"sticky",opacity:"0"}}></img>
             <a className='navbarText' href='mailto:danoruo1@students.towson.edu' style={{fontFamily:"hackerFont", color:"white"}}> danoruo1@students.towson.edu </a>
         </Box>
 
