@@ -49,7 +49,7 @@ function Experience() {
         <a href='/' className='navbartext'> Home </a>
         <a href='/experiences' className='navbartext'> Experiences </a>
         <a href='/projects' className='navbartext'> Projects </a>
-        <a href='pdfs/Anoruo_CV.pdf' className='navbartext' target="_blank" rel="noopener noreferrer"> Resume_CV </a>
+        <a href='pdfs/Anoruo_CV.pdf' className='navbartext' target="_blank" rel="noopener noreferrer"> Resume/CV </a>
       </div>
 
       <div style={{
