@@ -100,7 +100,8 @@ function Projects() {
           <Typography sx={{ fontSize: { xs: "1rem", sm: "1.2rem" }, fontFamily: "Montserrat", color: "white", lineHeight: "1.5" }}>
             {projects[currentProjectIndex].description}
           </Typography>
-          \n
+          <br></br>
+          <br></br>
           <Typography sx={{ fontSize: { xs: "1rem", sm: "1.2rem" }, fontFamily: "Montserrat", color: "white", lineHeight: "1.5" }}>
             Dependencies: {projects[currentProjectIndex].Dependencies}
           </Typography>
