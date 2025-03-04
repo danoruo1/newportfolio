@@ -48,7 +48,8 @@
 .navbar {
   background-color: black; /* No quotes around color */
   background-image: "linear-gradient(to right, #000000, #434343)";
-  height: 80px; /* No quotes around numbers */
+  height: 10%; /* No quotes around numbers */
+  width: 100%;
   display: flex; /* No quotes */
   justify-content: center; /* This ensures the logo and nav-links are spaced apart */
   align-items: center; /* No quotes */
@@ -58,6 +59,7 @@
   top: 0px; /* No quotes */
   z-index: 999; /* No quotes */
   gap: 70px;
+  overflow-x: auto;
   border-radius: 2px;
 }
 

@@ -27,15 +27,19 @@ function App() {
 
       </div>
 
-      <Typography
-      sx={{
-        fontFamily:"hackerFont",
-        fontSize:"50px",
-        color:"white",
-        '-webkit-text-stroke': '3px black',  
-        visibility:"hidden"
-      }}
-      > Daniel Anoruo </Typography>
+      
+      <div
+      style={{
+        width:"100vw",
+        height:"80vh",
+        overflowX:"auto",
+        overflowY:"auto",
+        left:"6%",
+        position:"relative"
+      }}>
+
+
+
       
       <ProfilePicComponent/>
 
@@ -48,7 +52,8 @@ function App() {
             alignItems:"center",
             justifyItems:"center",
             backgroundColor:"transparent",
-            borderRadius:"6px"
+            borderRadius:"6px",
+            overflow:"auto"
         }}>
             <Typography sx={{color:"white", 
         fontFamily:"hackerFont",fontWeight:"bold"
@@ -66,6 +71,7 @@ function App() {
 
 
       </Box>
+
       <Box
         sx={{
           width: "70vw",
@@ -117,6 +123,12 @@ function App() {
           or creating impactful technology solutions.
         </Typography>
       </Box>
+
+
+
+      </div>
+    
+
 
 
 

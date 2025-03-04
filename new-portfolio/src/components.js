@@ -17,7 +17,6 @@ const ProfilePicComponent = () => {
         height:"25vh",
         backgroundColor:"white",
         borderRadius:"20px",
-        left:"20px",
         alignItems:"center",
         position:"sticky",
         overflow:"clip",
