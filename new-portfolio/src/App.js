@@ -28,7 +28,7 @@ function App() {
         <Link to="/projects" className='navbartext'>
           Projects
         </Link>
-        <a href='pdfs/Anoruo_CV.pdf' className='navbartext' target="_blank" rel="noopener noreferrer"> Resume_CV </a>
+        <a href='pdfs/Anoruo_CV.pdf' className='navbartext' target="_blank" rel="noopener noreferrer"> Resume/CV </a>
       </div>
 
       <div style={{
