@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
 .App {
   text-align: center;
 }
@@ -46,52 +48,69 @@
 }
 
 .navbar {
-  background-color: black; /* No quotes around color */
-  background-image: "linear-gradient(to right, #000000, #434343)";
-  height: 10%; /* No quotes around numbers */
+  background-color: black;
+  background-image: linear-gradient(to right, #000000, #434343); /* Removed quotes */
+  height: 30%;
   width: 100%;
-  display: flex; /* No quotes */
-  justify-content: center; /* This ensures the logo and nav-links are spaced apart */
-  align-items: center; /* No quotes */
-  font-size: 1.8rem; /* No quotes */
-  font-family: hackerFont;
-  position: sticky; /* No quotes */
-  top: 0px; /* No quotes */
-  z-index: 999; /* No quotes */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  font-family: 'Montserrat', sans-serif; /* Added fallback font */
+  position: sticky;
+  z-index: 999;
   gap: 70px;
-  overflow-x: auto;
+  overflow: clip;
   border-radius: 2px;
 }
 
-.logo{
-  left: -200px;
-  height: 60px;
+.logo {
+  right: 19%;
+  height: 70px;
   width: 350px;
-  margin-right: 0px;
-  margin-left: 0px;
+  margin-right: 0;
+  margin-left: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: #282c34;
-  border-radius: 10px;
+  border: 1px solid #282c34; /* Added border width and style */
+  border-radius: 20px;
   position: relative;
 }
 
-.navbartext{
+.navbartext {
   color: white;
-  transition: all 0.3s ease; /* Smooth transition for all properties */
+  text-decoration: none; /* Added to remove underline from links */
+  transition: all 0.3s ease;
 }
 
 .navbartext:hover {
-  transform: scale(1.1); /* Slightly enlarges the button */
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Adds a shadow */
+  transform: scale(1.1);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-.frame{
-  background-color: "black";
-
+.frame {
+  background-color: black; /* Removed quotes */
+  padding: 20px; /* Added padding for better spacing */
+  border-radius: 10px; /* Added border radius */
+  transition: box-shadow 0.3s ease; /* Smooth transition for box shadow */
 }
 
 .frame:hover {
-  box-shadow: 5px 5px 15px rgb(255, 255, 251); /* Adds a shadow */
+  box-shadow: 5px 5px 15px rgba(255, 255, 251, 0.8); /* Adjusted shadow opacity */
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    gap: 20px;
+    font-size: 1.2rem;
+  }
+  .logo {
+    width: 200px;
+    left: 0;
+  }
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
 }
