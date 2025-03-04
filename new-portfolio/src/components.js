@@ -19,7 +19,7 @@ const ProfilePicComponent = () => {
       sx={{
         width: { xs: '80vw', sm: '50vw', md: '15vw' }, // Responsive width
         height: { xs: '30vh', sm: '25vh', md: '25vh' }, // Responsive height
-        backgroundColor: 'white',
+        backgroundColor: 'transparent',
         borderRadius: '20px',
         display: 'flex',
         alignItems: 'center',
