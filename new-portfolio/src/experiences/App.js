@@ -1,29 +1,20 @@
 import React, { useState } from 'react';
-import ProfilePicComponent from '../components';
 import logo from '../images/logo.png';
 import { Typography, Box, IconButton } from '@mui/material';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
 const projects = [
   {
-    title: "Cryptify",
-    description: "Developed a secure messaging app using RSA, AES, and Caesar cipher."
+    title: "Purdue Research Intern",
+    description: "As an undergraduate researcher at Purdue University, I had the opportunity to engage in a computational research project that focused on simulating complex systems through the use of Linux-based tools and high-performance computing. The primary goal of this research was to perform computational calculations that could model various physical and engineering systems. I was responsible for running simulations, analyzing results, and assisting in the optimization of code for more efficient processing. My work involved utilizing various programming languages and computational tools to ensure the accuracy and speed of the simulations. Additionally, I contributed to data collection and cleaning, as well as interpreting the results in the context of real-world applications. Throughout this research experience, I developed a deeper understanding of computational methods, data analysis, and problem-solving in a scientific context. This project sharpened my technical skills in Linux terminal operations, as well as my ability to work with large datasets, and it also gave me valuable insights into how computational research can advance understanding in fields like engineering and physics."
   },
   {
-    title: "Melody Map",
-    description: "Built an AI-powered music recommendation system based on user mood."
+    title: "Undergraduate Student Researcher",
+    description: "As an undergraduate researcher, I was involved in a data-driven project with the Baltimore Data Science Corps at Towson University, focused on investigating the correlation between the proximity of vacant properties, homeless shelters, and crime in Baltimore. The project aimed to identify patterns and predict areas where crime is most likely to occur using machine learning algorithms. I contributed to the project by cleaning and preparing the data, ensuring its accuracy and completeness before feeding it into the algorithm. I also helped analyze the results to understand how socio-economic factors might influence crime rates. Throughout the process, I gained valuable experience in data analysis, machine learning, and the application of AI to real-world problems, as well as honed my ability to work with large datasets and use statistical tools for meaningful insights. This research not only deepened my technical skills but also gave me an understanding of how data science can be applied to social issues like urban crime, and how such insights can inform public policy and improve community safety"
   },
   {
-    title: "Cybersecurity Club Database",
-    description: "Designed a membership management system with access controls."
-  },
-  {
-    title: "Baltimore Crime Analysis",
-    description: "Led a machine learning project to predict crime patterns using data analysis."
-  },
-  {
-    title: "Media Ministry",
-    description: "Managed live-streaming services for church events using Zoom & YouTube."
+    title: "Hackathon Contributor: StarTUP 2nd Place Runner Up",
+    description: "As a participant in StarTUP, I collaborated with a talented team to develop CourseSight, a platform designed to provide better, more accessible course feedback. Using software development and data analytics, we created a system to gather, analyze, and present feedback in a way that helps students make informed decisions about their courses and professors. This experience allowed me to apply my skills in both development and data analysis, while also strengthening my ability to work under pressure and collaborate effectively within a fast-paced team environment."
   }
 ];
 
@@ -67,8 +58,14 @@ function Experience() {
         alignItems: "center",
         justifyContent: "center"
       }}>
-        <ProfilePicComponent />
-
+         <img src="../images/research-image.png" alt="Research" style={{
+          width: "100%",
+          height: "auto", // keeps aspect ratio
+          maxWidth: "800px", // maximum width to make it rectangular
+          objectFit: "cover", // ensures it covers the area without distortion
+          borderRadius: "10px",
+          marginBottom: "20px"
+        }} />
         <Box sx={{
           width: { xs: "90%", sm: "80%", md: "70%" },
           padding: "20px",
