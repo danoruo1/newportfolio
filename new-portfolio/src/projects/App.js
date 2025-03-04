@@ -6,26 +6,30 @@ import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
 const projects = [
   {
-    title: "Cryptify",
-    description: "Developed a secure messaging app using RSA, AES, and Caesar cipher."
+    title: "Image Predictor Web Application",
+    description: "Developed a neural network using PyTorch to predict images, training it on a large dataset to enhance accuracy. Deployed the frontend built with Next.js on Vercel and the backend on Railway, utilizing FastAPI and Python for executing the neural network.",
+    githubLink: "https://github.com/danoruo1/image-prediction/",
+    Dependencies: "Next.js, Node.js, Python, FastAPI, PyTorch, Railway, Vercel"
   },
   {
-    title: "Melody Map",
-    description: "Built an AI-powered music recommendation system based on user mood."
+    title: "Encryption/Decryption Web Application (Cryptify)",
+    description: "Built a web application where users can post encrypted messages for others to practice decrypting. Implemented encryption and decryption features using React, Node.js, and PyCryptodome, ensuring robust security and an interactive user experience.",
+    githubLink: "https://github.com/danoruo1/Cryptify/tree/main/cryptify",
+    Dependencies: "Next.js, Node.js, Python, PyCryptodome, Firebase, React"
   },
   {
-    title: "Cybersecurity Club Database",
-    description: "Designed a membership management system with access controls."
+    title: "Cybersecurity Club Database Manager",
+    description: "Designed a full-stack web application using React and MySQL for managing club member profiles, meetings, and events. Developed a dynamic UI with Material-UI, including a sidebar for table selection and a query editor for executing SQL commands.",
+    githubLink: "https://github.com/danoruo1/CyberClub_DatabaseProject_COSC457",
+    Dependencies: "React, MySQL, JavaScript, Material-UI, Node.js"
   },
   {
-    title: "Baltimore Crime Analysis",
-    description: "Led a machine learning project to predict crime patterns using data analysis."
-  },
-  {
-    title: "Media Ministry",
-    description: "Managed live-streaming services for church events using Zoom & YouTube."
+    title: "CourseSight",
+    description: "Collaborated on developing CourseSight, a platform designed for improved course feedback. Leveraged software development and data analytics to enhance student decision-making, while strengthening teamwork and problem-solving skills in a high-pressure environment.",
+    Dependencies: "Next.js, Node.js, MongoDB, React"
   }
 ];
+
 
 function Projects() {
   const [currentProjectIndex, setCurrentProjectIndex] = useState(0);
@@ -96,6 +100,13 @@ function Projects() {
           <Typography sx={{ fontSize: { xs: "1rem", sm: "1.2rem" }, fontFamily: "Montserrat", color: "white", lineHeight: "1.5" }}>
             {projects[currentProjectIndex].description}
           </Typography>
+          \n
+          <Typography sx={{ fontSize: { xs: "1rem", sm: "1.2rem" }, fontFamily: "Montserrat", color: "white", lineHeight: "1.5" }}>
+            Dependencies: {projects[currentProjectIndex].Dependencies}
+          </Typography>
+          {(projects[currentProjectIndex].githubLink &&  <a href={projects[currentProjectIndex].githubLink} style={{ fontSize: { xs: "1rem", sm: "1.2rem" }, fontFamily: "Montserrat", color: "white", lineHeight: "1.5" }}>
+            Source Code: {projects[currentProjectIndex].githubLink}
+          </a>)}
         </Box>
       </div>
 

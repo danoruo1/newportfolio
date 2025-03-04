@@ -1,8 +1,12 @@
 import React, { useState } from 'react';
 import logo from '../images/logo.png';
+import datascience from '../images/datascience.jpg'
+import research from '../images/research.jpg'
+import hackathon from '../images/hackathon.png'
 import { Typography, Box, IconButton } from '@mui/material';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
+const images = [research,datascience,hackathon]
 const projects = [
   {
     title: "Purdue Research Intern",
@@ -58,13 +62,14 @@ function Experience() {
         alignItems: "center",
         justifyContent: "center"
       }}>
-         <img src="../images/research-image.png" alt="Research" style={{
+     <img src={images[currentProjectIndex]} alt="Research" style={{
           width: "100%",
           height: "auto", // keeps aspect ratio
-          maxWidth: "800px", // maximum width to make it rectangular
+          maxWidth: "500px", // maximum width to make it rectangular
           objectFit: "cover", // ensures it covers the area without distortion
           borderRadius: "10px",
-          marginBottom: "20px"
+          marginBottom: "20px",
+          
         }} />
         <Box sx={{
           width: { xs: "90%", sm: "80%", md: "70%" },
