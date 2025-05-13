@@ -1,83 +1,143 @@
 import './App.css';
-import ProfilePicComponent from './components';
-import logo from './images/logo.png';
+import sec from './photos/secquoia_logo.jpg';
+import nsf from './photos/logo.png'
 import {Typography, Box } from '@mui/material';
-function App() {
+import purdueImg from './photos/CISTAR.jpg';
+import start from './photos/start.png'
+import head from './photos/headstarter.jpg'
+const experiences = [
+  {
+    title: "CISTAR Research Intern",
+    description:"testest",
+    time:"May, 2024 - Jul 2024",
+    img:`url(${purdueImg})`,
+    bg:"contain"
+  },
+
+  {
+    title: "SWE Apprentice HeadStarterAI",
+    description:"testest",
+    time:"Jul, 2024 - Aug 2024",
+    img:`url(${head})`,
+    bg:"cover"
+
+
+  },
+  {
+    title: "Undergraduate Student Researcher",
+    description:"testest",
+    time:"Aug, 2024 - May 2025",
+    img:`url(${nsf})`,
+    bg:"cover"
+
+  },
+  {
+    title: "Hackathon Contributor: StarTUP 2nd Place Runner Up",
+    description:"testes",
+    time:"Nov, 2024 - Dec, 2024",
+    img:`url(${start})`,
+    bg:"cover"
+
+  },
+
+  {
+    title: "Returning Purdue Research Intern Under Secquoia",
+    description:"testses",
+    time:"May, 2025 - Present",
+    img:`url(${sec})`,
+    bg:"cover"
+
+  },
+
+
+
+];
+
+const TimeLine = () => {
+
+
+  return(<div style={style}>
+
+    {experiences.map((exp,index)=> (
+      
+      <div > 
+        <div style={{backgroundSize:"cover", justifyContent:"center",display:"flex",alignItems:"center",overflow:"hidden"}}>
+          <Typography className='navbartext' style={{fontWeight:"bold",fontSize:"1.2vw", textShadow:"4px 4px 4px black",backgroundColor:"transparent",color:"white",overflow:"hidden",width:"10vw"}}> {exp["title"]} </Typography> 
+
+          <div key={index} style={{...snippt,backgroundImage:exp["img"],backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'center',
+          backgroundSize: exp["bg"],}}> 
+          </div>
+          <Typography className='navbartext' style={{fontWeight:"bold",fontSize:"1.2vw", textShadow:"4px 4px 4px black",backgroundColor:"transparent",color:"white"}}> {exp["time"]} </Typography> 
+
+         
+      
+      
+      </div>
+      {index > 100000 && (
+        <Typography
+          className="navbartext"
+          gutterBottom={false}
+          style={{
+            fontWeight: "bold",
+            fontSize: "1.2vw",
+            textShadow: "4px 4px 4px black",
+            backgroundColor: "transparent",
+            color: "white",
+            margin: 0,
+            padding: 0,
+            display: "inline" // FOR LATER
+          }}
+        >
+          {exp["description"]}
+        </Typography>
+      )}
+
+      {index < experiences.length-1 &&<div style={{width:".35vw",height:"35vh",backgroundColor:"black", marginLeft:"15vw"}}>
+      </div>}
+
+
+
+      </div>
+      
+
+      
+  ))}
+
+
+    </div>)
+  
 
   
 
-  return (
-    <div style={{
-      backgroundColor:"blue",
-      backgroundImage: "linear-gradient(to right, #1e3c72, #2a5298)",
-      height:"100vh",
-      width:"100vw",
-      background:"cover",
-      boxShadow: '0px 10px 20px rgba(255, 0, 0, 0.25)', // Custom box shadow
-      overflow:"auto"
-    }}>
 
-
-      <div className='navbar'>
-        <img src={logo} className='logo' alt="Logo" />
-        <a href='/' className='navbartext'> Home </a>
-        <a href='/experiences' className='navbartext'> Experiences </a>
-        <a href='/' className='navbartext'> Projects </a>
-        <a href='pdfs/Anoruo_CV.pdf' className='navbartext' target="_blank" rel="noopener noreferrer"> Resume_CV </a>
-
-      </div>
-
-
-     
-
-
-
-      <footer
-        style={{
-          position: "fixed",
-          bottom: 0,
-          left: 0,
-          width: "100%",
-          height: "60px",
-          display: "flex",
-          justifyContent: "center",
-          backgroundColor:"black",
-          alignItems: "center",
-          boxShadow: "0px -2px 10px rgba(0, 0, 0, 0.1)",
-          zIndex: 1000, // Ensures it stays on top
-          gap: 70
-
-        }}
-      >
-        <Box sx={{
-          background:"transparent",
-        }}>
-            <img src='./github.svg' alt="" height={20} width={20}style={{top:"150px",position:"sticky"}}></img>
-            <a className='navbarText' href='https://github.com/danoruo1' style={{fontFamily:"hackerFont", color:"white"}}> Github </a>
-        </Box>
-
-        <Box sx={{
-          background:"transparent",
-        }}>
-            <img src='./linkedin.webp' alt="" height={20} width={20}style={{top:"150px",position:"sticky"}}></img>
-            <a className='navbarText' href='https://www.linkedin.com/in/daniel-anoruo-b05097268' style={{fontFamily:"hackerFont", color:"white"}}> Linkedin </a>
-        </Box>
-
-        <Box sx={{
-          background:"transparent",
-        }}>
-            <img src='./email.jpg' alt="" height={20} width={20}style={{top:"0px",position:"sticky"}}></img>
-            <a className='navbarText' href='mailto:danoruo1@students.towson.edu' style={{fontFamily:"hackerFont", color:"white"}}> danoruo1@students.towson.edu </a>
-        </Box>
-
-      </footer>
-
-
-
-
-
-    </div>
-  );
 }
 
-export default App;
+const style = {
+  backgroundSize:"cover",
+  marginTop:"5vh",
+  marginBottom:"5vh",
+  width:"65vw",
+  height:"100vh",
+  backgroundColor:"transparent",
+  display:"flex",
+  flexWrap:"wrap",
+  position:"relative",
+  justifyContent:"center",
+  overflow:"auto",
+  gap:"15px"
+}
+
+const snippt = {
+  width:"10vw",
+  height:"18vh",
+  backgroundColor:"white",
+  alignSelf:"center",
+  justifyContent:"center",
+  display:"flex",
+  borderRadius:"180px",
+  border:"5px solid black",
+  alignItems:"center",
+
+}
+export default TimeLine

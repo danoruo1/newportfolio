@@ -26,7 +26,8 @@ const ProfilePicComponent = () => {
         justifyContent: 'center',
         position: 'relative',
         overflow: 'hidden', // Changed from 'clip' to 'hidden' for better compatibility
-        boxShadow: '5px 5px 15px rgba(255, 251, 251, 0.8)', // Added opacity to shadow
+        border:"3px solid black",
+        boxShadow: '5px 5px 15px rgba(255, 251, 251, 0)', // Added opacity to shadow
         transition: 'opacity 0.5s ease-in-out, transform 0.3s ease-in-out', // Added transform transition
         opacity: opacity,
         '&:hover': {
@@ -43,13 +44,15 @@ const ProfilePicComponent = () => {
         }}
       >
         <img
-          src="./profilePic.jpg"
+          src="./photos/frontpic2.jpeg"
           alt="Profile"
           style={{
             width: '100%', // Make image responsive
             height: 'auto', // Maintain aspect ratio
             maxWidth: '300px', // Limit maximum size
             borderRadius: '10px', // Optional: Add border radius to the image
+            top:"3vh",
+            position:"relative"
           }}
         />
       </Box>
