@@ -87,6 +87,12 @@
   font-weight: bold;
 }
 
+.navbartextnh {
+  color: white;
+  text-decoration: none; /* Added to remove underline from links */
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
 .navbartext:hover {
   transform: scale(1.1);
 }
