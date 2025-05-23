@@ -17,7 +17,8 @@ function App() {
       backgroundSize: "cover",
       boxShadow: '0px 10px 20px rgba(255, 0, 0, 0.25)',
       overflow: "auto",
-      position:"relative"
+      position:"relative",
+      scrollBehavior:"smooth"
     }}>
 
 

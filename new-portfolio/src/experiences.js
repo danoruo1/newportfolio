@@ -125,7 +125,8 @@ const style = {
   position:"relative",
   justifyContent:"center",
   overflow:"auto",
-  gap:"15px"
+  gap:"15px",
+  scrollBehavior:"smooth"
 }
 
 const snippt = {
@@ -138,6 +139,7 @@ const snippt = {
   borderRadius:"180px",
   border:"5px solid black",
   alignItems:"center",
+  scrollBehavior:"smooth"
 
 }
 export default TimeLine
