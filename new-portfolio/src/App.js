@@ -1,17 +1,18 @@
 import './App.css';
 import ProfilePicComponent from './components';
-import { Typography, Box, Container } from '@mui/material';
+import { Typography, Box, Button } from '@mui/material';
 import Typewriter from 'typewriter-effect';
 import NameBox from './component2';
 import Projects from './projects';
 import TimeLine from './experiences';
+import overlay from './photos/overlay.png'
 function App() {
 
   
 
   return (
     <div style={{
-      backgroundImage: "linear-gradient(to right,rgb(192, 219, 252),rgb(196, 205, 238))",
+      backgroundImage: "linear-gradient(to right,rgb(0, 0, 0),rgb(34, 34, 34))",
       minHeight: "100vh",
       width: "100%",
       backgroundSize: "cover",

@@ -18,7 +18,7 @@ const Projects = () => {
 
 
         <div style={{backgroundColor:"transparent",backgroundSize:"cover",height:"30vh",width:"60vw",overflow:"visible",alignItems:"center",display:"flex",flex:"wrap",left:"5vw"}}>
-            <Box sx={{height:"25vh",width:"40vw",backgroundImage:images[index],borderRadius:"20px",border:"5px solid black",backgroundSize:"100%",backgroundRepeat:"no-repeat",backgroundPosition:"center",backgroundColor:"black"}}>
+            <Box sx={{height:"25vh",width:"40vw",backgroundImage:images[index],borderRadius:"20px",border:"5px solid black",backgroundSize:"cover",backgroundRepeat:"no-repeat",backgroundPosition:"center",backgroundColor:"transparent"}}>
                 
             </Box>
 
